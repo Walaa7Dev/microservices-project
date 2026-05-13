@@ -24,8 +24,8 @@ jobs:
           distribution: 'temurin'
 
       - name: Build Order Service
-        run: |
-          cd order-service
+          run: |
+          cd order-service/order-service
           mvn clean install
 
   build-payment-service:
@@ -42,7 +42,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Build Payment Service
-        run: |
-          cd payment-service
+          run: |
+          cd payment-service/payment-service
           mvn clean install
           
